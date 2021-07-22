@@ -1,0 +1,24 @@
+{
+  "actions": [
+    {
+      "id": "simple-blind-actions",
+      "title": {
+        "en": "Simple blind actions"
+      },
+      "titleFormatted": {
+        "en": "Roll mode: [[action]]"
+      },
+      "args": [
+        {
+          "name": "action",
+          "type": "dropdown",
+          "values": [
+            { "id": "up", "label": { "en": "Roll blinds up" } },
+            { "id": "stop", "label": { "en": "Stop rolling blinds" } },
+            { "id": "down", "label": { "en": "Roll blinds down" } }
+          ]
+        }
+      ]
+    }
+  ]
+}

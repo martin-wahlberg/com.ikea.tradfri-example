@@ -6,7 +6,7 @@
   "dependencies": {
     "homey-log": "^2.0.1",
     "homey-zigbeedriver": "^1.6.1",
-    "zigbee-clusters": "^1.4.0"
+    "zigbee-clusters": "^1.4.1"
   },
   "engines": {
     "node": ">=8.9.0"
@@ -18,7 +18,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",

@@ -7,29 +7,19 @@
   "class": "blinds",
   "capabilities": [
     "alarm_battery",
-    "windowcoverings_set"
+    "windowcoverings_set",
+    "up_down_stop_capabiltity"
   ],
   "energy": {
-    "batteries": [
-      "OTHER"
-    ]
+    "batteries": ["OTHER"]
   },
   "zigbee": {
     "manufacturerName": "IKEA of Sweden",
-    "productId": [
-      "FYRTUR block-out roller blind"
-    ],
+    "productId": ["FYRTUR block-out roller blind"],
     "endpoints": {
       "1": {
-        "clusters": [
-          0,
-          1,
-          4,
-          258
-        ],
-        "bindings": [
-          258
-        ]
+        "clusters": [0, 1, 4, 258],
+        "bindings": [258]
       }
     },
     "learnmode": {

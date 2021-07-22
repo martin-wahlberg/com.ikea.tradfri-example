@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "title": { "en": "Up down stop controller" },
+  "getable": false,
+  "setable": true,
+  "uiComponent": "ternary",
+  "uiQuickAction": true,
+  "values": [
+    { "id": "up", "title": { "en": "Up" } },
+    { "id": "stop", "title": { "en": "Stop" } },
+    { "id": "down", "title": { "en": "Down" } }
+  ]
+}

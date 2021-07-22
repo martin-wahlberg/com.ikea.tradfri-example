@@ -851,7 +851,8 @@
       "class": "blinds",
       "capabilities": [
         "alarm_battery",
-        "windowcoverings_set"
+        "windowcoverings_set",
+        "up_down_stop_capabiltity"
       ],
       "energy": {
         "batteries": [
@@ -1461,6 +1462,80 @@
           }
         ]
       }
+    ],
+    "actions": [
+      {
+        "id": "simple-blind-actions",
+        "title": {
+          "en": "Simple blind actions"
+        },
+        "titleFormatted": {
+          "en": "Roll mode: [[action]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=rollerblind_fyrtur"
+          },
+          {
+            "name": "action",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "up",
+                "label": {
+                  "en": "Roll blinds up"
+                }
+              },
+              {
+                "id": "stop",
+                "label": {
+                  "en": "Stop rolling blinds"
+                }
+              },
+              {
+                "id": "down",
+                "label": {
+                  "en": "Roll blinds down"
+                }
+              }
+            ]
+          }
+        ]
+      }
     ]
+  },
+  "capabilities": {
+    "up_down_stop_capabiltity": {
+      "type": "enum",
+      "title": {
+        "en": "Up down stop controller"
+      },
+      "getable": false,
+      "setable": true,
+      "uiComponent": "ternary",
+      "uiQuickAction": true,
+      "values": [
+        {
+          "id": "up",
+          "title": {
+            "en": "Up"
+          }
+        },
+        {
+          "id": "stop",
+          "title": {
+            "en": "Stop"
+          }
+        },
+        {
+          "id": "down",
+          "title": {
+            "en": "Down"
+          }
+        }
+      ]
+    }
   }
 }

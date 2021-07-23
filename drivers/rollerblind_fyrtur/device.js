@@ -34,10 +34,10 @@ class RollerBlindFyrtur extends GenericRollerBlindDevice {
       }
     };
 
-    const stopRainingAction = this.homey.flow.getActionCard(
+    const simpleBlindAction = this.homey.flow.getActionCard(
       'simple-blind-actions',
     );
-    stopRainingAction.registerRunListener(async args => {
+    simpleBlindAction.registerRunListener(async args => {
       triggerRollerSimpleAction(args.action);
     });
 
